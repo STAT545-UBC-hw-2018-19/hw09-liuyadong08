@@ -1,0 +1,17 @@
+---
+title: "First and last letters of English words"
+author: "Yadong Liu"
+date: '2018-11-24'
+output: pdf_document
+---
+
+```{r load-data}
+data1 <- read.delim("distance.tsv")
+data2 <- read.delim("same_count.tsv")
+```
+
+I explored the relationship between the first letter and the last letter of English words. Figure 1 shows how many words in the data has the same starting and ending letter, and how many words has the different ones. Further, for words that have different starting and ending letter, the interval between them is shown in Figure 2. For intance, the interval between letter "a" and "c" is 2.
+
+![*Fig. 1* A barplot of the number of words that have the same or different starting letter and ending letter. ](barplot.png)
+
+![*Fig. 2* A histogram of the interval between the starting letter and ending letter in English words ](distance.png)
