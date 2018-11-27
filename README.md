@@ -1,17 +1,7 @@
-make-activity
-=============
+# Repository of STAT547 Homework 09
+This repostory contains scripts that allow users to plot a number of plots and tables by running "make" in terminal or clicking "build" button in RStudio. The plots show the relationship between the first and the last letter of English words, i.e. whether they are same or not.
 
-The commit history of this repository reflects what a student might do as she works through [this activity](http://stat545-ubc.github.io/automation04_make-activity.html) from [STAT 545](http://stat545-ubc.github.io). This fully developed example shows:
+## Changes that were made
+I added two files: a letter.R and a report_yd.Rmd. The R script generates two tables that contain data relavant to the first and the last letter of English words. One table shows the number of English words that have the first letter same as/different from the last letter. The other table shows the interval between the first and last letter if they are differnt. E.g the interval between "a" and "c" is 2. The Rmd file communicate with the Makefile and is rendered as .pdf. Further, I used dir.create() to create folders automatically and stores the words.txt in "data", tables as .tsv files in "src", and the plots in "output". 
 
-  * How to run an R script non-interactively
-  * How to use `make`
-    - to record which files are inputs vs. intermediates vs. outputs
-    - to capture how scripts and commands convert inputs to outputs
-    - to re-run parts of an analysis that are out-of-date
-  * The intersection of R and `make`, i.e. how to
-    - run snippets of R code
-    - run an entire R script
-    - render an R Markdown document (or R script)
-  * The interface between RStudio and `make`
-  * How to use `make` from the shell
-  * How Git facilitates the process of building a pipeline
+Original files are stored in the folder named "jennybc_original" in this repository. It can also be accessed [here](https://github.com/STAT545-UBC-students/hw09-liuyadong08/tree/master/jennybc_original). 
